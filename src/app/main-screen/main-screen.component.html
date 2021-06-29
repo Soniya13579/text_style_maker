@@ -1,0 +1,26 @@
+<div class="newHeader">
+
+    <h1>
+        Choose Styles - 
+
+    <section>
+        <div class="example-button-row">
+          <button mat-button color="primary" name = "bold" (click)="selectBold('bold')">Bold</button>
+          <button mat-button color="primary" (click)="selectBold('italic')">Italic</button>
+          <button mat-button color="primary" (click)="selectBold('line')">Underline</button>
+          <button mat-button color="primary" (click)="resetText()">Reset</button>
+          <button mat-button color="primary" routerLink="/">Logout</button>
+        </div>
+        </section>
+</h1>
+
+    <div class="left-input">
+        <mat-form-field appearance="fill" class="example-full-width" >
+            <textarea matInput placeholder="Start Typing..." id="input-textarea" autofocus [(ngModel)] = "textInput1"></textarea>
+        </mat-form-field>
+    </div>
+
+    <div class="right-input" [innerHtml]="outputText">
+    </div>
+
+</div>
